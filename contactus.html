@@ -2,6 +2,39 @@
 <html>
   <head>
     <title>contact page</title>
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        
+        <style>  
+         *{
+          font-family: 'Roboto Slab', serif;
+      }
+      label{
+          color: rgb(57, 79, 80);
+          font-size: x-large;
+      }
+      input{
+          width: 400px;
+          height: 25px;
+          border-radius: 10px;
+          border: 2px solid rgb(3, 53, 34);
+          color: rgb(60, 68, 68);
+      }
+      input[type="text"]{
+              text-transform: capitalize;
+            }
+            input[type="email"]{
+                color: chocolate;
+            }
+            #submit:hover{
+                background-color: burlywood;
+            }
+            button[type="reset"]:hover{
+                color: brown;
+            }
+    </style>
  </head>
  <h3> Contact Us</h3> 
  <form>
@@ -33,11 +66,11 @@
                 </td>
               </tr>
               <tr>
-                <td>Enquiry:</td>
+                <td><label>Enquiry :</label></td>
                 <td><textarea rows="10" cols="50"> </textarea></td>
               </tr>
               <tr>
-                <td><button type="submit">Submit</button></td>
+                <td><button type="submit"id="submit">Submit</button></td>
                 <td><button type="reset">Clear </button></td>
               </tr>
               </tbody>
