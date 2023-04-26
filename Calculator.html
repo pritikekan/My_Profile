@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Itim", cursive;
+        color: cadetblue;
+        font-size: x-large;
+      }
+      h1 {
+        text-align: left;
+        text-decoration: none;
+      }
+      .box {
+        background-color: #f2f2f2;
+        border-radius: 50px;
+        width: 800px;
+        height: 500px;
+      }
+      input {
+        width: 400px;
+        height: 25px;
+        border-radius: 20px;
+      }
+      #calci {
+        margin-left: 10px;
+        padding-right: 100px;
+      }
+      #percentage {
+        margin-left: 10px;
+        padding-right: 20px;
+      }
+      #calculator:hover {
+        background-color: burlywood;
+        border-radius: 20px;
+        width: 150px;
+        color: #f2f2f2;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>DISCOUNT CALCULATOR</h1>
+      <p><b>Enter the Bill aount and discount in percentage</b></p>
+      <br />
+      <form>
+        <label id="calci" for="Bill">Bill Amount</label>
+        <input type="number" id="Bill" required /><br />
+        <br />
+        <label id="percentage" for="percentage"> Discount Percentage</label>
+        <input type="number" id="num" required />
+        <br />
+        <br />
+        <button type="calculator" id="calculator">calculate</button> <br />
+      </form>
+
+      <p>Total Discount Amount ==</p>
+    </div>
+  </body>
+</html>
